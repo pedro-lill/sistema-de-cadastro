@@ -1,4 +1,4 @@
-# Sistema de cadastro de jogos
+# Sistema de cadastro de livros
 
 > Status : Em desenvolvimento
 
@@ -8,3 +8,5 @@ Para rodar esse projeto em sua máquina você precisa digitar os seguintes coman
 node app.js
 
 ```
+
+:)
