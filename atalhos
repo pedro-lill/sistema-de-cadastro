@@ -1,0 +1,11 @@
+git log --oneline
+    para ver os commits feitos
+
+    git log --oneline --graph
+    para ver os commits feitos em forma de grafico
+
+git restore --source <hash> .nomeArquivo
+    para restaurar um arquivo para --um commit especifico
+
+git restore --source <hash> .
+    para restaurar todos os arquivos para um commit especifico
