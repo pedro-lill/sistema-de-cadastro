@@ -9,3 +9,57 @@ git restore --source <hash> .nomeArquivo
 
 git restore --source <hash> .
     para restaurar todos os arquivos para um commit especifico
+
+
+git log --oneline
+    os commits possuem hashs que os identificam de uma forma única
+
+git log -p
+    para ver as alterações feitas em cada commit
+
+git log --author="user_name"
+    para ver os commits feitos por um usuário especifico
+
+git log --since=1.month.ago --until=1.day.ago
+    para ver os commits feitos em um intervalo de tempo
+
+git log --pretty="format:%h %s"
+    para ver os commits feitos em um intervalo de tempo
+
+--grep="Merge pull request"   # in commit messages
+    -S"console.log"               # in code
+    -G"foo.*"                     # in code (regex)
+    --invert-grep
+    --all-match                   # AND in multi --grep
+
+
+    Você também pode configurar o git clone e clonar o repositório a partir de uma branch específica, diferente da original dessa forma:
+git clone -branch new_feature <repositorio>
+
+
+Para verificar as modificações realizadas:
+
+1- Utilize o comando 
+    git status, 
+ele serve para listar todos os arquivos que foram modificados.
+2 - Para adicionar as mudanças ao seu repositório local:
+
+Para adicionar todas as modificações realizadas de uma só vez, é necessário usar git add . 
+    (git add e um ponto) 
+e, para adicionar as mudanças em algum arquivo específico, usa-se git add nome-do-arquivo-alterado.
+
+3 - Para salvar as alterações:
+Utilize o comando 
+    git commit,
+ele é usado quando queremos capturar e salvar o estado atual do repositório.
+4 - Para enviar as modificações ao repositório remoto:
+Utilize o comando 
+    git push,
+ele é utilizado para envio das alterações gravadas no diretório local para o repositório remoto.
+
+git restore
+
+Aprendemos a trabalhar com essa parte de restauração de arquivos e do projeto, voltando para um estado anterior através do git restore;
+git add
+
+Aprendemos a adicionar os arquivos que queremos para o próximo commit através do git add.
